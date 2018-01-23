@@ -4,12 +4,6 @@ html {
 body {
   display: block;
 }
-.cleafix:before,
-.cleafix:after {
-  content: ' ';
-  display: table;
-  clear: both;
-}
 .logo {
   width: 200px;
   height: 200px;
