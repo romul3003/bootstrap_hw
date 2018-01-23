@@ -1,0 +1,16 @@
+html {
+  background: rgba(255,105,0,0.2);
+}
+body {
+  display: block;
+}
+.cleafix:before,
+.cleafix:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+.logo {
+  width: 200px;
+  height: 200px;
+}
