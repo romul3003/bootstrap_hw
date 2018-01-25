@@ -1,17 +1,76 @@
 extends root
 
+block meta
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
 
 block styles
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+
 	link(rel="stylesheet" href=asset("styles.css"))
 
 block scripts
+	script(src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous")
+
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+
 	script(src=asset("main.js"))
 
 block main
 	+b-header()
-	block content
+	main
+		block content
+		+b-jumbotron()
+		
+		.container
+			section
+				.row
+					.col-md-6
+						h2 Our Agency, our selves.
+						p Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor.
+					.col-md-6
+						figure
+							img(src="http://placehold.it/750x350", alt="placeholder").img-thumbnail
+			
+			section
+				.row
+					.col-md-4
+						h3 Photoshop
+						p Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.
+					.col-md-4
+						h3 Javascript
+						p Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.
+					.col-md-4
+						h3 Marketing
+						p Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.
+			
+			hr
 
-	//- +b-footer()
+			section
+				.row
+					.col
+						+b-stats-list(statsMenu)
+
+			hr
+
+			h3 Our Recent Work
+
+			section.gallery
+				- var n = 0
+				.row
+					while n < 12
+						.col-md-3
+							img(src="http://placehold.it/550x550", alt="placeholder").img-thumbnail
+						
+						- n++
+
+			hr
+
+
+			+b-footer(footerMenu)
 
 
 

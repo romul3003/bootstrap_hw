@@ -1,0 +1,37 @@
+mixin b-stats-list(items)
+	ul.nav.nav-fill
+		each item in items
+			li.nav-item
+				a(href=item.url).nav-link
+					.stat= item.label
+					span= item.name
+
+- 
+	var statsMenu = 
+		[
+			{
+				url: '#',
+				label: "28",
+				name: "Websites"
+			},
+			{
+				url: '#',
+				label: "43",
+				name: "Apps"
+			},
+			{
+				url: '#',
+				label: "95",
+				name: "Ads"
+			},
+			{
+				url: '#',
+				label: "59",
+				name: "Cakes"
+			},
+			{
+				url: '#',
+				label: "18",
+				name: "Logos"
+			}
+		]

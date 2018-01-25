@@ -1,0 +1,27 @@
+mixin b-footer(items)
+	ul.nav
+		each item in items
+			li.nav-item
+				a(href=item.url).nav-link= item.label
+
+-
+	var footerMenu =
+		[
+			{
+				url: '#',
+				label: "One"
+			},
+			{
+				url: '#',
+				label: "Two"
+			},
+			{
+				url: '#',
+				label: "Three"
+			},
+			{
+				url: '#',
+				label: "Four"
+			}
+
+		]
