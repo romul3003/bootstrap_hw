@@ -53,31 +53,21 @@ block main
 				.row
 					.col
 						+b-stats-list(statsMenu)
-						//- ul.nav.nav-fill
-						//- 	li.nav-item
-						//- 		a(href="#").nav-link
-						//- 			.stat 28
-						//- 			span Websites
-						//- 	li.nav-item
-						//- 		a(href="#").nav-link
-						//- 			.stat 43
-						//- 			span Apps
-						//- 	li.nav-item
-						//- 		a(href="#").nav-link
-						//- 			.stat 95
-						//- 			span Ads
-						//- 	li.nav-item
-						//- 		a(href="#").nav-link
-						//- 			.stat 59
-						//- 			span Cakes
-						//- 	li.nav-item
-						//- 		a(href="#").nav-link
-						//- 			.stat 18
-						//- 			span Logos
 
 			hr
 
+			h3 Our Recent Work
 
+			section.gallery
+				- var n = 0
+				.row
+					while n < 12
+						.col-md-3
+							img(src="http://placehold.it/550x550", alt="placeholder").img-thumbnail
+						
+						- n++
+
+		
 	//- +b-footer()
 
 
