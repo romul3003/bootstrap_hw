@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");
+html,
+body {
+  font-family: Helvetica, Roboto, Arial sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+a {
+  color: #2199e8;
+}
+a:hover {
+  color: #1585cf;
+}
+.collapse.navbar-collapse:first-of-type .navbar-nav {
+  margin-right: auto;
+}
+.collapse.navbar-collapse:last-of-type .navbar-nav {
+  margin-left: auto;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #2199e8;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #1585cf;
+}
+.navbar-brand {
+  font-size: 1rem;
+}

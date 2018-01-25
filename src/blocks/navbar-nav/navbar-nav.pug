@@ -1,0 +1,39 @@
+mixin b-menu(items)
+	ul.navbar-nav
+		each item in items
+			li.navbar-nav__item
+				a(href=item.url).nav-link= item.label
+
+- 
+	var menuItemsLeft = 
+		[
+			{
+				url: '#',
+				label: "One"
+			},
+			{
+				url: '#',
+				label: "Two"
+			}
+		]
+    
+- 
+	var menuItemsRight = 
+		[
+			{
+				url: '#',
+				label: "Three"
+			},
+			{
+				url: '#',
+				label: "Four"
+			},
+			{
+				url: '#',
+				label: "Five"
+			},
+			{
+				url: '#',
+				label: "Six"
+			}
+		]

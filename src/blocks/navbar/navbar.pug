@@ -1,0 +1,14 @@
+mixin b-navbar()
+	nav.navbar.navbar-expand-lg.navbar-light.bg-light
+		a(href="#").navbar-brand Yeti Agency
+		button(type="button" data-toggle="collapse" data-target=".nav-wrap" aria-controls="nav-wrap" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
+			span.navbar-toggler-icon
+
+
+
+		.collapse.navbar-collapse.nav-wrap
+			+b-menu(menuItemsLeft)
+			
+
+		.collapse.navbar-collapse.nav-wrap
+			+b-menu(menuItemsRight)
