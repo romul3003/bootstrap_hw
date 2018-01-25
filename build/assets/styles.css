@@ -12,7 +12,7 @@ a:hover {
   color: #1585cf;
 }
 .gallery div[class^="col"] {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .jumbotron {
   border-top: 1px solid rgba(10,10,10,0.25);
